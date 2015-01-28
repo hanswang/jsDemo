@@ -1,0 +1,155 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demo Test">
+    <meta name="author" content="Hans Wang">
+
+    <title>Demo Test for Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-slider.min.css" rel="stylesheet">
+
+    <style>
+        body {padding-top: 70px;}
+        #star {
+            width: 200px;
+            height: 200px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+            background-color: rgb(255, 255, 0);
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Quiz Demos</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#de" role="tab" data-toggle="tab">Doppler Effect</a></li>
+            <li><a href="#bb" role="tab" data-toggle="tab">Balanced Brackets</a></li>
+            <li><a href="#tc" role="tab" data-toggle="tab">Time Confusion</a></li>
+            <li><a href="#cp" role="tab" data-toggle="tab">CSV Parsing</a></li>
+            <li><a href="#ad" role="tab" data-toggle="tab">Anagram Detection</a></li>
+            <li><a href="#sp" role="tab" data-toggle="tab">Spiral</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.hanswang.info/"><span class="label label-info">by</span> Hans Wang</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="tab-content">
+
+        <div role="tabpanel" class="tab-pane fade in active" id="de">
+          <div id="star" class="center-block"></div>
+          <div class="form-inline" style="margin-top:50px; padding-top:10px;">
+            <div class="col-lg-6">
+              <div style="float:right; clear:both;">
+                <label>Velocity (km/s)</label>
+                <input type="text" class="form-control" placeholder="Numbers Only" value="0">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <input id="slider" type="text" value="" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="186" data-slider-selection="none" data-slider-tooltip="hide">
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="bb">
+          <textarea class="form-control" rows="3"></textarea>
+          <br />
+          <div class="pull-right">
+            <button class="btn btn-primary">Validate</button>
+          </div>
+          <div class="clearfix"></div>
+          <label>Output:</label>
+          <div class="alert alert-info">
+            <span class="outcome"></span>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="tc">
+          <textarea class="form-control" rows="3"></textarea>
+          <br />
+          <div class="pull-right">
+            <button class="btn btn-primary">Validate</button>
+          </div>
+          <div class="clearfix"></div>
+          <label>Output:</label>
+          <div class="alert alert-info">
+            <span class="outcome"></span>
+          </div>
+        </div>
+        
+        <div role="tabpanel" class="tab-pane fade" id="cp">
+          <textarea class="form-control" rows="3"></textarea>
+          <br />
+          <div class="pull-right">
+            <button class="btn btn-primary">Validate</button>
+          </div>
+          <div class="clearfix"></div>
+          <label>Output:</label>
+          <div class="alert alert-info">
+            <span class="outcome"></span>
+          </div>
+        </div>
+        
+        <div role="tabpanel" class="tab-pane fade" id="ad">
+          <textarea class="form-control" rows="3"></textarea>
+          <br />
+          <div class="pull-right">
+            <button class="btn btn-primary">Validate</button>
+          </div>
+          <div class="clearfix"></div>
+          <label>Output:</label>
+          <div class="alert alert-info">
+            <span class="outcome"></span>
+          </div>
+        </div>
+        
+        <div role="tabpanel" class="tab-pane fade" id="sp">
+          <textarea class="form-control" rows="3"></textarea>
+          <br />
+          <div class="pull-right">
+            <button class="btn btn-primary">Validate</button>
+          </div>
+          <div class="clearfix"></div>
+          <label>Output:</label>
+          <div class="alert alert-info">
+            <span class="outcome"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-slider.min.js"></script>
+
+    <!-- Demo app script -->
+    <script src="./js/doppler-effect.js"></script>
+    <script src="./js/balanced-brackets.js"></script>
+    <script src="./js/time-confusion.js"></script>
+    <script src="./js/csv-parsing.js"></script>
+    <script src="./js/anagram-detection.js"></script>
+    <script src="./js/spiral.js"></script>
+  </body>
+</html>
